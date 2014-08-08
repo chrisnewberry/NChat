@@ -9,7 +9,7 @@ $nchatInfo['nchatLast']     = $boarddir.'/NChat/last.html';
 $nchatInfo['nchatMutelist'] = $boarddir.'/NChat/NChatMuteList.php';
 
 if($user_info['is_guest'])
-	$nchatInfo['name'] = '<i>' . $txt['guest_title'] . '</i>';
+	$nchatInfo['name'] =  '<i>' . $ip=$_SERVER['REMOTE_ADDR'] . $txt['guest_title'] . '</i>';
 else
 	$nchatInfo['name'] = $user_info['name'];
 	
